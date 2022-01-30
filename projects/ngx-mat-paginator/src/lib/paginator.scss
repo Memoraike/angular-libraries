@@ -1,0 +1,104 @@
+@use '~@angular/cdk/a11y';
+
+$padding: 0 8px;
+$page-size-margin-right: 8px;
+
+$items-per-page-label-margin: 0 4px;
+$selector-margin: 6px 4px 0 4px;
+$selector-trigger-width: 56px;
+$selector-trigger-outline-width: 64px;
+$selector-trigger-fill-width: 64px;
+
+$range-label-margin: 0 32px 0 24px;
+$button-icon-size: 28px;
+
+.mat-paginator {
+  display: block;
+}
+
+.first-spacer,
+.last-spacer {
+  color: inherit;
+  font-size: large;
+  padding: 0 4px;
+}
+
+// Note: this wrapper element is only used to get the flexbox vertical centering to work
+// with the `min-height` on IE11. It can be removed if we drop support for IE.
+.mat-paginator-outer-container {
+  display: flex;
+}
+
+.mat-paginator-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  padding: $padding;
+  width: 100%;
+}
+
+.mat-paginator-page-size {
+  align-items: baseline;
+  display: flex;
+  margin-right: $page-size-margin-right;
+
+  [dir='rtl'] & {
+    margin-left: $page-size-margin-right;
+    margin-right: 0;
+  }
+}
+
+.mat-paginator-page-size-label {
+  margin: $items-per-page-label-margin;
+}
+
+.mat-paginator-page-size-select {
+  margin: $selector-margin;
+  width: $selector-trigger-width;
+
+  &.mat-form-field-appearance-outline {
+    width: $selector-trigger-outline-width;
+  }
+
+  &.mat-form-field-appearance-fill {
+    width: $selector-trigger-fill-width;
+  }
+}
+
+.mat-paginator-range-label {
+  margin: $range-label-margin;
+}
+
+.mat-paginator-range-actions {
+  align-items: center;
+  display: flex;
+}
+
+button + button {
+  margin-left: 15px;
+}
+.mat-paginator-navigation-page-button {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  height: 2em;
+  min-width: 10px;
+  padding: 10px;
+}
+
+.mat-paginator-icon {
+  fill: currentColor;
+  width: $button-icon-size;
+
+  @include a11y.high-contrast(active, off) {
+    // On Chromium browsers the `currentColor` blends in with the
+    // background for SVGs so we have to fall back to `CanvasText`.
+    /* stylelint-disable-next-line */
+    //fill: CanvasText;
+  }
+
+  [dir='rtl'] & {
+    transform: rotate(180deg);
+  }
+}

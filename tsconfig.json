@@ -11,6 +11,12 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "paths": {
+      "ngx-mat-paginator": [
+        "dist/ngx-mat-paginator/ngx-mat-paginator",
+        "dist/ngx-mat-paginator"
+      ]
+    },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,

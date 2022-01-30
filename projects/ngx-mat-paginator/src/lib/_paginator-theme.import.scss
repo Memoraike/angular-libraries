@@ -1,0 +1,11 @@
+@forward '~@angular/material/core/theming/theming.import';
+@forward '~@angular/material/core/density/private/compatibility.import';
+@forward 'paginator-variables' as mat-paginator-*;
+@forward '~@angular/material/core/typography/typography-utils.import';
+@forward 'paginator-theme' as mat-paginator-*;
+
+@import '~@angular/material/core/theming/palette';
+@import '~@angular/material/core/theming/theming';
+@import '~@angular/material/core/typography/typography-utils';
+@import '~@angular/material/core/density/private/compatibility';
+@import './paginator-variables';

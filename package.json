@@ -1,6 +1,27 @@
 {
   "name": "angular-libraries",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "author": "memoraike",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MeowForMeow/angular-libraries.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MeowForMeow/angular-libraries/issues"
+  },
+  "homepage": "https://github.com/MeowForMeow/angular-libraries",
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular 2",
+    "angular-material",
+    "angular material paginator",
+    "paginator",
+    "ngx-mat",
+    "ngx-mat-paginator",
+    "ngx-material-paginator"
+  ],
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,13 +29,15 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~12.2.0",
+    "@angular/cdk": "^12.2.13",
     "@angular/common": "~12.2.0",
     "@angular/compiler": "~12.2.0",
     "@angular/core": "~12.2.0",
     "@angular/forms": "~12.2.0",
+    "@angular/material": "^12.2.13",
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
@@ -34,6 +57,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "ng-packagr": "^12.1.1",
     "typescript": "~4.3.5"
   }
 }

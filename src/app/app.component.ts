@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { NgxMatPaginator } from 'ngx-mat-paginator';
 
 @Component({
   selector: 'ngx-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  @ViewChild(NgxMatPaginator) paginator!: NgxMatPaginator;
   title = 'angular-libraries';
+  constructor() {
+  }
+
+  public goto(): void {
+    this.paginator.firstPage();
+  }
 }

@@ -418,6 +418,17 @@
     </button>
   </div>
 
+  <button mat-button (click)="goto()">first page</button>
+
+  <ngx-mat-paginator
+    color="primary"
+    [length]="100"
+    [pageSize]="5"
+    [pageList]="2"
+    [showFirstLastButtons]="true"
+  >
+  </ngx-mat-paginator>
+
   <!-- Terminal -->
   <div class="terminal" [ngSwitch]="selection.value">
       <pre *ngSwitchDefault>ng generate component xyz</pre>
@@ -497,4 +508,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-

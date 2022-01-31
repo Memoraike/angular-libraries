@@ -25,11 +25,10 @@
   "peerDependencies": {
     "@angular/common": "^12.2.0",
     "@angular/core": "^12.2.0",
-    "@angular/platform-browser": "0.0.0-NG",
-    "@angular/forms": "0.0.0-NG",
-    "@angular/material": "0.0.0-PLACEHOLDER",
-    "@angular/cdk": "0.0.0-PLACEHOLDER",
-    "tslib": "0.0.0-TSLIB"
+    "@angular/platform-browser": "^12.2.0",
+    "@angular/forms": "^12.2.0",
+    "@angular/material": "^12.2.0",
+    "@angular/cdk": "^12.2.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"

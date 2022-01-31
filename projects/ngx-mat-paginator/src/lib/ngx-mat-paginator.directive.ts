@@ -243,8 +243,9 @@ export abstract class _NgxMatPaginatorBase<
       right = right + Math.abs(this.pageIndex - this.pageList);
     }
     if (this.pageIndex + this.pageList >= this.getNumberOfPages()) {
+      const offset = this.pageIndex + this.pageList === this.getNumberOfPages() ? +1 : -1;
       right -= this.pageIndex + this.pageList - this.getNumberOfPages();
-      left += this.pageIndex - this.getNumberOfPages() - 1;
+      left += this.pageIndex - this.getNumberOfPages() + offset;
     }
     for (let i = left; i <= right; i++) {
       i >= 0 && i < this.getNumberOfPages() && pages.push(i);

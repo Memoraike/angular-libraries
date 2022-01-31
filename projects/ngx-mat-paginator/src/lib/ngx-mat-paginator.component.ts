@@ -15,7 +15,7 @@ import { MatFormFieldAppearance } from '@angular/material/form-field';
 import { NgxMatPaginatorIntl } from './ngx-mat-paginator-intl';
 
 @Component({
-  selector: 'ngx-ngx-mat-paginator',
+  selector: 'ngx-mat-paginator',
   templateUrl: 'ngx-mat-paginator.component.html',
   styleUrls: ['paginator.scss'],
   inputs: ['disabled'],

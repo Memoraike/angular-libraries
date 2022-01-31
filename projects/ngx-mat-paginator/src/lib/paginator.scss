@@ -90,6 +90,7 @@ button + button {
 .mat-paginator-icon {
   fill: currentColor;
   width: $button-icon-size;
+  margin-bottom: 2px;
 
   @include a11y.high-contrast(active, off) {
     // On Chromium browsers the `currentColor` blends in with the
